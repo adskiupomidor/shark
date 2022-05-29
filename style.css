@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital@1&family=Playfair+Display+SC:wght@400;700&display=swap");
+
+body {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  grid-template-rows: 50px auto 150px;
+  grid-template-areas:
+    "header header"
+    "sidebar main"
+    "footer footer";
+  background-image: url(https://ru.dreamstime.com/%D0%BC%D0%B8%D0%BB%D0%B0%D1%8F-%D0%B0%D0%BA%D1%83%D0%BB%D0%B0-%D0%BC%D1%83%D0%BB%D1%8C%D1%82%D1%84%D0%B8%D0%BB%D1%8C%D0%BC-%D0%BF%D0%BE%D0%B7%D0%B8%D1%80%D1%83%D0%B5%D1%82-%D0%B8-%D1%83%D0%BB%D1%8B%D0%B1%D0%B0%D0%B5%D1%82%D1%81%D1%8F-%D0%B2%D0%B5%D0%BA%D1%82%D0%BE%D1%80%D0%BD%D0%B0%D1%8F-%D0%B8%D0%BB%D0%BB%D1%8E%D1
+}
+header {
+  grid-area: header;
+  background-color: rgb(200, 230, 255);
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  column-gap: 20px;
+  align-items: center;
+}
+header img {
+  height: 50px;
+  width: auto;
+}
+header h1 {
+  margin: 0;
+  font-size: 20px;
+}
+main {
+  grid-area: main;
+  background-color: rgb(230, 255, 255);
+  padding: 20px;
+}
+main section {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  column-gap: 10px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+main section img {
+  width: 100px;
+  height: auto;
+}
+nav {
+  grid-area: sidebar;
+  background-color: rgb(255, 230, 255);
+}
+footer {
+  grid-area: footer;
+  background-color: rgb(100, 130, 155);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "menu contacts"
+    "copy copy";
+}
+footer nav {
+  background: none;
+  grid-area: menu;
+}
+footer section {
+  grid-area: contacts;
+}
+footer section h3,
+footer a,
+footer li {
+  color: white;
+}
+footer p {
+  grid-area: copy;
+  text-align: center;
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+}
+main section p {
+  font-family: "", serif;
+}
+
+main section video {
+}
+nav img {
+  height: 150px;
+  width: auto;
+}
